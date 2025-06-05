@@ -1,0 +1,424 @@
+<html>
+<head>
+	<title></title>
+<script src="https://kit.fontawesome.com/10ad736600.js" crossorigin="anonymous"></script>
+<style type="text/css">
+	:root{ font-size: 62.5%;}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 1.6rem;
+  background: #EDBB99;
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+/*search-one expanding search bar*/
+.search-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box1{
+  background-color: #FDEBD0;
+  height: 6rem;
+  padding: .5rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  
+}
+
+.search-input1{
+  border: none;
+  outline: none;
+  width: 0rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 5rem;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.search-input1::placeholder{
+  color: #95A5A6;
+}
+
+.search-box1:hover .search-input1{
+  width: 30rem;
+  padding: 0 .5rem 
+}
+
+.search-btn1{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  background-color: #FDEBD0;
+  transition: 0.5s; 
+  cursor: pointer;
+}
+
+/* .............................................. */
+
+/*search-two search bar*/
+.search-container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; 
+}
+
+.search-box2{
+  background-color: #C39BD3 ;
+  height: 6rem;
+  padding: 2rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  
+}
+
+.search-input2{
+  border: none;
+  outline: none;
+  width: 30rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 5rem;
+  background-color: rgba(244, 236, 247, .3);
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.search-input2::placeholder{
+  color: #566573;
+}
+
+
+.search-btn2{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  background-color: rgba(244, 236, 247, .3);
+  transition: 0.5s; 
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+/* .............................................. */
+
+ /*search-three expandable search bar with border bottom*/
+
+.search-container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box3{
+  background-color: transparent;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  
+}
+
+.search-input3{
+  border: none;
+  outline: none;
+  width: 0;
+color: white;
+  background-color: transparent;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+.search-input3::placeholder{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.search-box3:hover .search-input3{
+  width: 30rem;
+  
+}
+
+.search-btn3{
+  height: 6rem;
+  width: 6rem;
+  outline: none;
+  border: 1px solid;
+  font-size: 2rem;
+  border-radius: 5rem;
+  background-color: transparent;
+  transition: 0.5s; 
+  cursor: pointer;
+  color: white;
+}
+
+.search-box3:hover .search-btn3{
+  border: none;
+  position: relative;
+  right: 6rem;
+  bottom: .5rem;
+}
+
+/* .............................................. */
+
+ /*search-four search bar with button*/
+.search-container4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box4{
+  height: 6rem;
+  padding:.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s; 
+}
+
+.search-input4{
+  border: none;
+  outline: none;
+  position: relative;
+  width: 35rem;
+  height: 5.5rem;
+  border-radius: 1rem;
+color: black;
+  background-color: #DAF7A6;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+.search-btn4{
+  height: 5.5rem;
+  width: 10rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  border-radius: 0 1rem 1rem 0 ;
+  background-color: rgb(240, 128, 128);
+  transition: 0.5s; 
+  cursor: pointer;
+  color: black;
+  padding: .5rem;
+  position: relative;
+  right: 3rem;
+}
+
+.search-box3:hover .search-btn3{
+  border: none;
+  position: relative;
+  right: 6rem;
+  bottom: .5rem;
+}
+
+/* .............................................. */
+
+ /*search-five rectangle search bar with icon*/
+
+.search-container5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box5{
+  height: 5rem;
+  padding:.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s; 
+}
+
+.search-input5{
+  border: 3px solid #196F3D;
+  border-right: none;
+  outline: none;
+  position: relative;
+  width: 35rem;
+  height: 4rem;
+  /* border-radius: ; */
+  color: black;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+.search-input5:focus{
+  color: black;
+  box-shadow: 0 0 5px #196F3D;
+}
+
+
+.search-btn5{
+  height: 4rem;
+  width: 4rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  background-color: #196F3D;
+  transition: 0.5s; 
+  cursor: pointer;
+  color: #F1C40F;
+}
+/* .............................................. */
+
+ /*search-six expandable square search bar with left icon*/
+
+.search-container6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
+
+.search-box6{
+  height: 5rem;
+  padding:.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s; 
+}
+
+.search-input6{
+  border: none;
+  border-right: none;
+  outline: none;
+  position: relative;
+  width: 0;
+  height: 4rem;
+  border-radius: 0 .5rem .5rem 0;
+color: black;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+.search-box6:hover .search-input6{
+  width: 35rem;
+}
+
+.search-input6:focus{
+  color: black;
+  box-shadow: 0 0 5px #566573;
+}
+
+
+.search-btn6{
+  height: 4rem;
+  width: 4rem;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  background-color: #566573  ;
+  transition: 0.5s; 
+  cursor: pointer;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    
+  <div class="search-container1">
+    <form class="search-box1">
+      <input type="search" class="search-input1" placeholder="Search..."/>
+      <button type="button" class="search-btn1">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </div>
+    
+  <div class="search-container2">
+    <form class="search-box2">
+      <button type="button" class="search-btn2">
+        <i class="fa fa-search"></i>
+      </button>
+      <input type="search" class="search-input2" placeholder="Search..."/>
+      
+    </form>
+  </div>
+  
+    <div class="search-container3">
+    <form class="search-box3">
+      <input type="search" class="search-input3" placeholder="Search..."/>
+      <button type="button" class="search-btn3">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </div>
+    
+    <div class="search-container4">
+    <form class="search-box4">
+      <input type="search" class="search-input4" placeholder="Type..."/>
+      <button type="button" class="search-btn4">
+        Search
+      </button>
+    </form>
+  </div>
+    
+    <div class="search-container5">
+    <form class="search-box5">
+      <input type="search" class="search-input5" placeholder="Search..."/>
+      <button type="button" class="search-btn5">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </div>
+    
+      <div class="search-container6">
+    <form class="search-box6">
+      <button type="button" class="search-btn6">
+        <i class="fa fa-search"></i>
+      </button>
+      <input type="search" class="search-input6" placeholder="Search..."/>
+      
+    </form>
+  </div>
+  </div>
+</body>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FootGear | Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-sha512-hash..." crossorigin="anonymous" />	
+	<style type="text/css">
+		body{
+	/*overflow: hidden;*/
+	/*overflow-y: hidden;*/
+	  background: #171616;  
+      background: -webkit-linear-gradient(to left, #171616, #030338);  
+      background: linear-gradient(to left, #171616, #030338);  
+      /*background: #ffd89b;  
+      background: -webkit-linear-gradient(to left, #ffd89b,#030338, #19547b);  
+      background: linear-gradient(to left, #ffd89b,#030338, #19547b);*/
+      margin: 0px 0px;
+}
+ *{
+        box-sizing: border-box;
+      }
+.footgear{
+	/*background-color: #171616;*/
+	color: white;
+	margin-top: -35px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1{
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+p{
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	font-size: 20px;
+	/*text-align: justify;*/
+}
+.maintitle{
+	/*background-color: #171616;*/
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-top: 25px; 
+}
+.title {
+	/*background-color: #171616;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+	/*padding-top: 25px;*/
+	/*display: flex;*/
+}
+.navbar{
+	display: flex;
+	border: 2px solid white;
+	border-radius: 5px;
+	justify-content: space-around;
+	padding: 8px 0px;
+}
+.navbar a{
+	color: white;
+	text-align: center;
+	padding: 13px;
+    text-decoration: none;
+	font-size: 20px;
+	width: 180px /*170px*/;
+	text-decoration: none;
+}
+.navbar a:hover{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	/*box-shadow: 0px 10px 15px #afe0f5;*/
+	box-shadow: 0 0 25px #afe0f5;
+	border-radius: 5px;
+}
+
+.footer1{
+	display: flex;
+	border-bottom: 2px solid white;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-top: 2px solid white;
+}
+.left-footer{
+	width: 50%;
+	text-align: center;
+	/*padding-top: 25px;*/
+	/*padding-right: 400px;*/
+}
+/*.left-footer p{
+	padding-left: 100px;
+}*/
+.right-footer h1{
+	width: 250px;
+}
+.right-footer p{
+	font-size: 17px;
+}
+.footer2{
+	display: flex;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.left-footer1{
+	width: 60%;
+}
+.left-footer1 h1{
+	text-align: left;
+	margin-left: 75px;
+}
+.right-footer1{
+	width: 400px;
+	margin-left: 200px;
+}
+
+#icons1{
+	height: 50px;
+	width: 50px;
+	margin-left: 10px ;
+
+}
+#icons2{
+	height: 50px;
+	width: 50px;
+	margin-left: 250px;	
+}
+#icons1:hover{
+	border-radius: 15px;
+	border: 2px solid whitesmoke;
+	box-shadow: 0 0 25px #afe0f5;
+}
+#icons2:hover{
+	border-radius: 15px;
+	border: 2px solid whitesmoke;
+	box-shadow: 0 0 25px #afe0f5;
+}
+.copyright{
+	font-size: 25px;
+}
+
+.right-footer a{
+	color: skyblue;
+	text-decoration: none;
+}
+.right-footer a:hover{
+	color: /*#0c14a5*/orange;
+	text-decoration: underline;
+}
+
+.footer1 h1{
+	margin-bottom: 5px;
+}
+.footer2 h1{
+	margin-bottom: 8px;
+}
+.container{
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        width: 400px;
+        max-width: 100%;
+       
+        width: 400px;
+        background: #171616;  
+            background: -webkit-linear-gradient(to left, #171616, #030338);  
+            background: linear-gradient(to left, #171616, #030338);  
+        box-shadow: 0px 0px 10px #45f3ff;
+        color: white;
+        margin: 50px auto;
+      }
+
+      .header{
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .header h2{
+        margin-top: -7px;
+      }
+
+      .form{
+        padding: 30px 20px;
+        z-index: 2;
+      }
+
+      .form-control{
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+
+      .form-control label{
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .form-control input{
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .form-control.success input{
+        border-color: #2ecc71;
+      }
+
+      .form-control.error input{
+        border-color: #e74c3c;
+      }
+
+      .form-control i{
+        visibility: hidden;
+        position: absolute;
+        top: 36px;
+        right: 10px;
+      }
+
+      .form-control i.fa-eye {
+        visibility: visible;
+        cursor: pointer;
+        color: black;
+      }
+
+      .form-control i.fa-eye-slash {
+        visibility: hidden;
+        cursor: pointer;
+        color: black;
+      }
+
+      .form-control.success i.fa-check-circle {
+        visibility: visible;
+        color: #2ecc71;
+        top: 36px;
+        right: 30px;
+      }
+
+      .form-control.error i.fa-exclamation-circle{
+        visibility: visible;
+        color: #e74c3c;
+        top: 36px;
+        right: 30px;
+      }
+
+      .form-control small{
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .form-control.error small{
+        visibility: visible;
+        color: #e74c3c;
+      }
+
+      .form button{
+        /*border: 2px solid #8e44ad;*/
+        border-radius: 2px;
+        color: #fff;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        font-family: inherit;
+        border: none;
+      }
+      .button-btn{
+        display: flex;
+      }
+      .button-btn a.button{
+        text-align: center;
+        background: red;
+        padding: 10px 0px;
+       width: 150px;
+        text-decoration: none;
+        color: white;
+        /*border: 2px solid #8e44ad;*/
+        border-radius: 2px;
+      }
+      .button:hover{
+        box-shadow: 0px 0px 10px white;
+        font-weight: bold;
+      }
+      .button-btn button.signupbtn{
+        background: #1ac217;
+        cursor: pointer;
+      }
+      .signupbtn:hover{
+        box-shadow: 0px 0px 10px white;
+        font-weight: bold;
+      }
+      .link {
+        color: lightblue;
+      }
+      .link:hover{
+        color: blue;
+      }
+
+    .button-btn{
+      margin-top: 10px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signup{
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.signup p{
+  text-align: center; 
+  margin-bottom: -20px;
+  margin-top: 5px;
+}
+.signup a{
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+
+}
+.signup a:hover{
+  background-color: blue;
+  box-shadow: 0px 0px 10px white;
+}
+.header h2{
+  color: #FF6700;
+  margin-bottom: 0px;
+}
+.button-btn a.link{
+      background: none;
+      border: none;
+      text-decoration: none;
+      /*width: 150px;*/
+      padding-top: 10px;
+      padding-right: 2px;
+
+    }
+    .button-btn a.link:hover{
+      color: blue;
+      text-decoration: underline;
+    }
+ .para{
+ 		font-size: 16px;
+ }
+
+.btm-line{
+        border-bottom: 2px solid white;
+      }
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="footgear">
+		<div class="maintitle">
+			<!-- <img src="D:/Project/sports/Phantom GT Elite FG/logo.jpg"> -->
+			<div class="h1"><h1>Foot<font color="#db4504">Gear</h1></div>
+			<p>WEAR IT TO FEEL IT </p></font>
+		</div>
+			<div class="navbar">
+	  			<a href="./index.html">HOME</a>
+	  			<a href="./men.html">MEN</a>
+	  			<a href="./women.html">WOMEN</a>
+	  			<a href="./sports.html">SPORTS</a>
+	  			<a href="">ABOUT US</a>
+	  			<a href="./login%20Form.html">LOGIN</a>
+	  			<!-- <div class="search bar">
+	  		 	<input id="input" type="search" placeholder="search here.." class="form-control form-control-underlined">
+	  		 	<button type="submit?" class="custom-btn btn-1"> Search </button> 
+	  		 	</div>  -->	  	
+				<!-- <div class="search-container">
+					<input type="search" id="search-input" placeholder="Search...">
+				    <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+				</div> -->
+			</div>
+
+			<div class="container">  
+  <form action="" class="form" id="form">
+    <div class="header">
+    <h2>Login</h2>
+    <p class="para">New user Create Account by signup</p>
+  </div>
+
+    <div class="form-control">
+      <label>Email</label>
+      <input type="email" placeholder="Your Email" id="email">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Password</label>
+      <input type="password" placeholder="Your password" id="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="far fa-eye" id="show" onclick="togglePassword()"></i>
+      <i class="far fa-eye-slash" id="hide" onclick="togglePassword()"></i>
+      <small>Error message</small>
+    </div>
+    <div class="button-btn">
+      <button class="signupbtn">Login</button>
+    </div>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <div class="button-btn">
+      <a href="./Project/index.html" class="button">Cancel</a> 
+      <a href="#" class="link">Forgot Password?</a>
+      <!-- <button id="popup-button">Forgot Password?</button> -->
+        <!-- <div id="popup-container">
+          <div id="popup-content">
+            <h2>Reset Password</h2>
+              <input type="password" name="password" placeholder="Enter new password "required>
+              <input type="password" name="password" placeholder="Confirm password "required>
+              <div class="close">
+                <button id="close-button">cancel</button>
+                <button id="close-button">Submit</button>
+              </div>
+          </div>
+        </div> --> 
+    </div><hr>
+    <div class="signup">
+          <p class="para">Don't have Account? <a href="./Registration%20Form.html">Signup</a></p>
+        </div>  
+  </form>
+</div>
+
+
+			<div class="footer1">
+				<div class="left-footer">
+					<h1>Foot<font color="#db4504">Gear</h1>
+					<p>WEAR IT FEEL IT</p></font>
+					<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button> -->
+					<!-- <a href="#"   onclick="scrollTopAnimated()" id="myBtn">Back to top ↑</a> -->
+				</div>
+				<div class="right-footer">
+					<h1>MEN<font color="#db4504">'s</font></h1>
+					<p>
+					<a href="./Acg%20Zoom%20Air.html">ACG Zoom Air</a><br>
+					<a href="./Air%20Zoom%20Tempo.html">Air Zoom Tempo</a><br>
+					<a href="./Jordan%20Zoom.html">Jordan Zoom</a></p>
+				</div>
+				<div class="right-footer">
+					<h1>WOMEN<font color="#db4504">'S</font></h1>
+					<p>
+					<a href="./Air%20Max%20200.html">Air Max 200</a><br>
+					<a href="./Air%20Max%202090.html">Air Max 2090</a><br>
+					<a href="./Air%20VaporMax%202020%20FK.html">Air VaporMax 2020 FK</a></p>
+				</div>
+				<div class="right-footer">
+					<h1>SPORT<font color="#db4504">'S</font></h1>
+					<p>
+					<a href="./Air%20Zoom%20BB%20NXT.html">Air Zoom BB NXT</a><br>
+					<a href="./Court%20Lite%202.html">Court Lite 2</a><br>
+					<a href="./Phantom%20GT%20Elite%20FG.html">Phantom GT Elite FG</a></p>
+				</div>
+			</div>
+			
+			<div class="footer2">
+				<div class="left-footer1">
+					<h1>FOLLOW <font color="#db4504">US</font></h1>
+					<a href="#"><img src="./icons/youtube.png"id="icons2" ></a>
+					<a href="#"><img src="./icons/twitter (1).png" id="icons1"></a>
+					<a href="#"><img src="./icons/facebook (1).png" id="icons1"></a>
+					<a href="#"><img src="./icons/telegram.png" id="icons1"></a>
+					<a href="#"><img src="./icons/whatsapp.png" id="icons1"></a>
+					<a href="#"><img src="./icons/instagram.png"id="icons1"></a>	
+				</div>
+				<div class="right-footer1">	
+					<h1>CONTACT <font color="#db4504">US</font></h1>
+					<p>+1800 14573 72639<br>
+					info@foot<font color="#db4504">gear</font>.com</p>
+				</div>
+      </div>
+      <div class="btm-line"> 
+        <div class="title">
+          <p class="copyright">COPYRIGHTS © 2023 FOOT<font color="#db4504">GEAR</font></p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <script type="text/javascript" src="./script.js"></script>
+	 <script type="text/javascript">
+	 	const form = document.getElementById('form');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  if (checkInputs()) {
+        window.location.href = "index.html"; 
+      }
+});
+
+const checkInputs = () => {
+  // Get values from the inputs 
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+  let isValid=true;
+  
+  if(!emailValue) {
+    //Show error    
+    //Add error class
+    setErrorFor(email, 'Email cannot be blank');
+    isValid = false;
+  } else if(!isEmail(emailValue)) {
+    //Show error    
+    //Add error class
+    setErrorFor(email, 'Email is not valid');
+    isValid = false;
+  } else {
+    //Add succes class
+    setSuccessFor(email);
+  }
+  
+  const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+  if(!passwordValue) {
+    //Show error    
+    //Add error class
+    setErrorFor(password, 'Password cannot be blank');
+    isValid = false;
+  } else if(passwordValue.length < 8){
+    //Add succes class
+    setErrorFor(password, 'Incorrect Password');
+    isValid = false;
+  } else if(!passwordValue.match(re)){
+    //Add succes class
+    setErrorFor(password, 'Incorrect password');
+    isValid = false;
+  } else {
+    //Add succes class
+    setSuccessFor(password);
+  }
+    
+  //HomeWork mostrar un mensaje de exito al hacer click y todo este correcto
+  return isValid;
+}
+
+const setErrorFor = (input, message) => {
+  const formControl = input.parentElement; //this is the .form-control
+  const small = formControl.querySelector('small');
+  
+  //add error message inside small
+  small.innerText = message;
+  
+  //add error class
+  formControl.className = 'form-control error';
+} 
+
+const setSuccessFor = (input) => {
+  const formControl = input.parentElement; //this is the .form-control
+  
+  //add success class
+  formControl.className = 'form-control success';
+}
+
+const isEmail = (email) => {  
+  //this checks if the email is valid
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+const togglePassword = () => {
+  const psw = document.getElementById('password');  
+  const show = document.getElementById('show');
+  const hide = document.getElementById('hide');
+  
+  
+
+  if (psw.type === "password") {
+      psw.type = "text";
+      show.style.visibility = 'hidden';
+      hide.style.visibility = 'visible';
+    } else {
+      psw.type = "password";
+      show.style.visibility = 'visible';
+      hide.style.visibility = 'hidden';
+    }
+  
+  
+}
+
+const toggleConfirm = () => {
+  const confirm = document.getElementById('password2');
+  
+  const show2 = document.getElementById('show2');
+  const hide2 = document.getElementById('hide2');
+  
+  if (confirm.type === "password") {
+      confirm.type = "text";
+      show2.style.visibility = 'hidden';
+      hide2.style.visibility = 'visible';
+    } else {
+      confirm.type = "password";
+      show2.style.visibility = 'visible';
+      hide2.style.visibility = 'hidden';
+    }
+}
+
+
+	 	// Get the search input and button elements
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+
+// Attach an event listener to the button
+searchButton.addEventListener('click', function() {
+  // Get the search query from the input field
+  const query = searchInput.value;
+  
+  // Perform the search operation
+  performSearch(query);
+});
+
+// Function to perform the search operation
+function performSearch(query) {
+  // Replace this with your desired search functionality
+  console.log('Searching for:', query);
+}
+
+        function scrollTopAnimated() {
+            $("html, body").animate(
+                { scrollTop: "0" }, 3000);
+        }
+
+        $(document).ready(function () {
+          if (!$.browser.webkit) {
+              $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+          }
+      });
+
+    // var openButton = document.getElementById('popup-button');
+    // var closeButton = document.getElementById('close-button');
+    // var popupContainer = document.getElementById('popup-container');
+
+    // // Open the popup when the button is clicked
+    // openButton.addEventListener('click', function() {
+    //   popupContainer.style.display = 'block';
+    // });
+
+    // // Close the popup when the close button is clicked
+    // closeButton.addEventListener('click', function() {
+    //   popupContainer.style.display = 'none';
+    // });
+    </script>
+</body>
+</html>
